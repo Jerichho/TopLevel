@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Top Level MMA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Top Level MMA</a>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#programs">Programs</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="shop-hero">
+        <div class="container">
+            <h1>MMA Equipment Shop</h1>
+            <p>High-quality gear for fighters of all levels</p>
+        </div>
+    </section>
+
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-filters">
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="gloves">Gloves</option>
+                    <option value="pads">Pads</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="equipment">Equipment</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">All Prices</option>
+                    <option value="under-50">Under $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="over-100">Over $100</option>
+                </select>
+            </div>
+
+            <div class="products-grid">
+                <!-- Boxing Gloves -->
+                <div class="product-card" data-category="gloves" data-price="under-50">
+                    <img src="images/boxing-gloves.jpg" alt="Boxing Gloves">
+                    <h3>Professional Boxing Gloves</h3>
+                    <p class="price">$49.99</p>
+                    <p class="description">High-quality leather boxing gloves with wrist support</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Shin Guards -->
+                <div class="product-card" data-category="equipment" data-price="50-100">
+                    <img src="images/shin-guards.jpg" alt="Shin Guards">
+                    <h3>Competition Shin Guards</h3>
+                    <p class="price">$79.99</p>
+                    <p class="description">Professional shin guards for Muay Thai and kickboxing</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Rash Guard -->
+                <div class="product-card" data-category="clothing" data-price="under-50">
+                    <img src="images/rash-guard.jpg" alt="Rash Guard">
+                    <h3>Performance Rash Guard</h3>
+                    <p class="price">$39.99</p>
+                    <p class="description">Breathable rash guard for BJJ and MMA training</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Focus Mitts -->
+                <div class="product-card" data-category="pads" data-price="50-100">
+                    <img src="images/focus-mitts.jpg" alt="Focus Mitts">
+                    <h3>Training Focus Mitts</h3>
+                    <p class="price">$69.99</p>
+                    <p class="description">Professional focus mitts for boxing and kickboxing</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- MMA Shorts -->
+                <div class="product-card" data-category="clothing" data-price="under-50">
+                    <img src="images/mma-shorts.jpg" alt="MMA Shorts">
+                    <h3>Competition MMA Shorts</h3>
+                    <p class="price">$44.99</p>
+                    <p class="description">Comfortable MMA shorts with built-in compression liner</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Heavy Bag -->
+                <div class="product-card" data-category="equipment" data-price="over-100">
+                    <img src="images/heavy-bag.jpg" alt="Heavy Bag">
+                    <h3>Professional Heavy Bag</h3>
+                    <p class="price">$199.99</p>
+                    <p class="description">100lb heavy bag for boxing and kickboxing training</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <h2>Shopping Cart</h2>
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <p>Total: <span id="cart-total-amount">$0.00</span></p>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Top Level MMA</h3>
+                    <p>Your premier destination for MMA training and equipment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#programs">Programs</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Email: info@toplevelmma.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Address: 123 Fighter Street, Combat City, CC 12345</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Top Level MMA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html> 
